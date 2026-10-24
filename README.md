@@ -48,7 +48,10 @@ TypeError [ERR_INVALID_ARG_TYPE]: The path argument must be of type string. Rece
 
 1. **只替换文件（推荐）**：用本仓库的 `src/main/store.js` 覆盖
    `C:\Program Files\Tencent\QQNT\resources\app\LiteLoaderQQNT\src\main\store.js`，然后重启 QQ。
-2. **整目录替换**：下载 Releases 里的 zip，解压覆盖 `...\resources\app\LiteLoaderQQNT`（会同时带上 `LICENSE`、`package.json` 与全部 `src`）。
+2. **整目录覆盖**：下载 [`dist/LiteLoaderQQNT-1.4.1-fixed.zip`](dist/LiteLoaderQQNT-1.4.1-fixed.zip)，解压覆盖
+   `...\resources\app\LiteLoaderQQNT`（内含 `src/`、`package.json`、`LICENSE`，不含 `data/`、`plugins/`，不会覆盖你的插件和配置）。
+
+   该 zip 的 SHA-256：`f6a36c813a4417557a58ce771d69035e3ddc1f044fb6cbb3963622cf4825f6f6`（31,606 bytes）。
 
 重启 QQ 后，设置页能显示「LiteLoaderQQNT 1.4.1」即安装成功。
 

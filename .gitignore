@@ -8,6 +8,7 @@ node_modules/
 *.bak-*
 *.log
 *.zip
+!dist/*.zip
 
 # OS junk
 Thumbs.db
