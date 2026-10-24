@@ -101,7 +101,7 @@ exports.getPluginConfig = (slug, config) => {
 exports.scanPluginDirectory = () => {
     fs.mkdirSync(LiteLoader.path.plugins, { recursive: true });
     return fs.readdirSync(LiteLoader.path.plugins, { withFileTypes: true })
-        .map(dirent => path.join(dirent.path, dirent.name, "manifest.json"))
+        .map(dirent => path.join(LiteLoader.path.plugins, dirent.name, "manifest.json"))
         .filter(manifest => fs.existsSync(manifest))
         .map(manifest => ({
             path: path.dirname(manifest),
