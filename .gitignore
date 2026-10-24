@@ -1,0 +1,16 @@
+# LiteLoaderQQNT runtime directories (never part of the source tree)
+data/
+plugins/
+node_modules/
+
+# Local backups / artifacts
+*.bak
+*.bak-*
+*.log
+*.zip
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
